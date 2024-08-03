@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Gabarito:wght@700&family=Roboto:wght@500&family=Ubuntu:wght@500&display=swap');
+
+/* font-family: 'Courgette', cursive;
+font-family: 'Gabarito', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
+
+.conMain .text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 9;
+}
+
+.main-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    backdrop-filter: blur(2px);
+}
+
+.text {
+    width: 60%;
+}
+
+.main-overlay .text h1 {
+    color: #fff;
+    font-size: 65px;
+    font-family: 'Gabarito', Arial, sans-serif;
+    padding-bottom: 30px;
+
+}
+
+.text h1 {
+    font-size: 2rem;
+    font-family: 'Courgette', cursive;
+}
+
+.text .description {
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 20px;
+    font-size: 20px;
+
+}
+
+.packages {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 80vh;
+    height: auto;
+    gap: 30px;
+    padding: 50px;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    text-align: center;
+    font-family: arial;
+    border: 2px solid purple;
+    border-radius: 1.2rem;
+    background-color: aliceblue;
+}
+
+.card img {
+    border-radius: 1.2rem;
+    height: 150px;
+    width: 95%;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: scale(1.025);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card h1 {
+    font-size: 1.5rem;
+}
+
+.card button {
+    cursor: pointer;
+    width: 60%;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: .25rem;
+    color: #fff;
+    background-color: #007bff;
+    opacity: 0.8;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card button:hover {
+    opacity: 1;
+}
