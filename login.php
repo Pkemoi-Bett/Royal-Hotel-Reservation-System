@@ -66,7 +66,7 @@ if (isset($_SESSION['username']) || isset($_SESSION['ownername']) || isset($_SES
 
 <head>
     <meta charset="UTF-8">
-    <title>Reservify: Login</title>
+    <title>SweetHome: Login</title>
     <!-- Include CSS files -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/login.css">
@@ -98,7 +98,7 @@ if (isset($_SESSION['username']) || isset($_SESSION['ownername']) || isset($_SES
                     <label for="user-role">User</label>
 
                     <input type="radio" id="owner-role" name="role" value="Owner" required>
-                    <label for="owner-role">Hotel Owner</label>
+                    <label for="owner-role">Restaurant Owner</label>
                 </div>
                 <input type="submit" id="login" value="Login">
         </form>

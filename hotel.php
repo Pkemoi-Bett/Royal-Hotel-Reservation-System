@@ -8,7 +8,7 @@ session_start()
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel</title>
+    <title>Restaurant</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/hotel.css">
 </head>
@@ -18,12 +18,12 @@ session_start()
 <body>
     <div class="main">
         <div class="title">
-            <h1>HOTELS</h1>
+            <h1>RESTAURANTS</h1>
         </div>
 
         <div class="search-container">
-            <input type="text" id="hotelSearch" placeholder="Search for hotels...">
-            <button onclick="searchHotels()">Search</button>
+            <input type="text" id="hotelSearch" placeholder="Search for Restaurant...">
+            <button onclick="searchrestaurant()">Search</button>
         </div>
 
         <div class="cardContainer">

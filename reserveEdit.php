@@ -55,7 +55,7 @@ if (isset($_POST['submit'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/checkout.css">
-    <title>Hotel Checkout</title>
+    <title>Restaurant Checkout</title>
 
 </head>
 
@@ -63,7 +63,7 @@ if (isset($_POST['submit'])) {
 
 <body>
     <div class="main">
-        <h1>Hotel Checkout</h1>
+        <h1>Restaurant Checkout</h1>
 
         <form action="" method="POST">
             <div class="form-container">

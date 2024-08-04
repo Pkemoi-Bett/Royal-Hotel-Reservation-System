@@ -39,7 +39,7 @@ if (!isset($_SESSION['username'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/updateCheckout.css">
-    <title>Hotel Checkout</title>
+    <title>Restaurant Checkout</title>
 
 </head>
 
@@ -47,7 +47,7 @@ if (!isset($_SESSION['username'])) {
 
 <body>
     <div class="main">
-        <h1>Hotel Checkout</h1>
+        <h1>Restaurant Checkout</h1>
 
         <?php echo '<form action="getcheckout.php?hotel=' . $hotelid . '&pkg=' . $pkgid . '" method="POST">'; ?>
         <div class="form-container">

@@ -41,7 +41,7 @@ if (isset($_POST['submit'])) {
 
 <head>
   <meta charset="UTF-8">
-  <title>Reservify: Sign Up</title>
+  <title>SweetHome</title>
   <!-- Include CSS files -->
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/register.css">
@@ -89,7 +89,7 @@ if (isset($_POST['submit'])) {
         <p>Are you member? <a href="./login.php">Login</a></p>
       </div>
       <div class="login-wrap">
-        <p>Are you Hotel Owner? <a href="./ownerRegister.php">Register Here.</a></p>
+        <p>Are you Restaurant Owner? <a href="./ownerRegister.php">Register Here.</a></p>
       </div>
 
     </form>

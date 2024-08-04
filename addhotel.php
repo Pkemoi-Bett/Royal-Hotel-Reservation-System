@@ -5,7 +5,7 @@ require_once './conn.php';
 // Redirect to login page if the owner is not logged in
 if (!isset($_SESSION['owner_id'])) {
     echo "<script>
-        alert('Please login before adding a hotel.');
+        alert('Please login before adding a restaurant.');
         window.location.href='./login.php';
         </script>";
     exit();
@@ -63,21 +63,21 @@ mysqli_close($conn);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Hotel</title>
+    <title>Add Restaurant</title>
     <link rel="stylesheet" href="./css/addhotel.css">
 </head>
 <body>
     <?php include "./partials/header.php"; ?>
     <div class="main">
-        <h1>Add Hotel</h1>
+        <h1>Add Restaurant</h1>
         <form action="" method="POST" enctype="multipart/form-data">
-            <label for="hotelName">Hotel Name:</label>
+            <label for="hotelName">Restaurant Name:</label>
             <input type="text" id="hotelName" name="hotelName" required>
 
             <label for="description">Description:</label>
             <textarea id="description" name="description" rows="4" required></textarea>
 
-            <label for="image">Hotel Image:</label>
+            <label for="image">Restaurant Image:</label>
             <input type="file" id="image" name="image" accept="image/*" required>
 
             <input type="submit" name="submit" value="Add Hotel">

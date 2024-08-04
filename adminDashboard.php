@@ -36,7 +36,7 @@ if (!isset($_SESSION['admin_id'])) {
                 <li><a href="#profile">Profile</a></li>
                 <li><a href="#user">User</a></li>
                 <li><a href="#employee">Employee</a></li>
-                <li><a href="#hotelOwner">Hotel Owner</a></li>
+                <li><a href="#hotelOwner">restaurant Owner</a></li>
                 <li><a href="./customerCareDashboard.php">Customer Care</a></li>
 
             </ul>
@@ -63,7 +63,7 @@ if (!isset($_SESSION['admin_id'])) {
                 <div class="pbtn">
                     <a href="#user"><button type="button">Customer Management</button></a>
                     <a href="#employee"><button type="button">Employee Management</button></a>
-                    <a href="#hotelOwner"><button type="button">Hotel Owner Management</button></a>
+                    <a href="#hotelOwner"><button type="button">restaurant Owner Management</button></a>
                     <a href="./customerCareDashboard.php"><button type="button">Customer Care Dashboard</button></a>
                 </div>
             </section>
@@ -160,7 +160,7 @@ if (!isset($_SESSION['admin_id'])) {
             </section>
             <!-- Hotel owner management -->
             <section id="hotelOwner">
-                <h1>Hotel Owner Management</h1>
+                <h1>Restaurant Owner Management</h1>
                 <div class="table-main">
                     <div class="table-wrapper">
                         <table class="table">
@@ -194,14 +194,14 @@ if (!isset($_SESSION['admin_id'])) {
                                         echo '</tr>';
                                     }
                                 } else {
-                                    echo '<tr><td colspan="4">No hotel owners found.</td></tr>';
+                                    echo '<tr><td colspan="4">No restaurant owners found.</td></tr>';
                                 }
                                 ?>
                             </tbody>
                         </table>
                     </div>
 
-                    <?php echo '<a href="./ownerRegister.php"><button type="button">Add New Hotel Owner</button></a>'; ?>
+                    <?php echo '<a href="./ownerRegister.php"><button type="button">Add New restaurant Owner</button></a>'; ?>
                 </div>
             </section>
         </div>

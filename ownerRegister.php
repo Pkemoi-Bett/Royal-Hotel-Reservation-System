@@ -42,7 +42,7 @@ if (isset($_POST['submit'])) {
 
 <head>
   <meta charset="UTF-8">
-  <title>Reservify: Sign Up - Owner</title>
+  <title>SweetHome: Sign Up - Owner</title>
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/register.css">
   <script src="./js/validate.js"></script>

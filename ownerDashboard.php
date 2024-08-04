@@ -3,7 +3,7 @@ session_start();
 
 if (!isset($_SESSION['owner_id'])) {
     echo "<script>
-        alert('You must login as a Hotel owner to access this page.');
+        alert('You must login as a Restaurant owner to access this page.');
         window.location.href='./login.php';
         </script>";
     // exit();
@@ -26,6 +26,7 @@ if (!isset($_SESSION['owner_id'])) {
     <link rel="stylesheet" href="css/ownerDashboard.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/table.css">
+    
 </head>
 
 <?php include "./partials/header.php" ?>
@@ -37,7 +38,7 @@ if (!isset($_SESSION['owner_id'])) {
             <ul>
                 <li><a href="#profile">Profile</a></li>
                 <li><a href="#reservations">Reservations</a></li>
-                <li><a href="#hotel">Hotel</a></li>
+                <li><a href="#hotel">Restaurant</a></li>
                 <li><a href="#packages">Packages</a></li>
             </ul>
         </div>
@@ -62,7 +63,7 @@ if (!isset($_SESSION['owner_id'])) {
                 </div>
                 <div class="pbtn">
                     <a href="#reservations"><button type="button">View Reservation</button></a>
-                    <a href="./addhotel.php"><button type="button">Add New Hotel</button></a>
+                    <a href="./addhotel.php"><button type="button">Add New Restaurant</button></a>
                     <a href="./addPackage.php"><button type="button">Add New Package</button></a>
                 </div>
             </section>
@@ -75,7 +76,7 @@ if (!isset($_SESSION['owner_id'])) {
                             <thead>
                                 <tr>
                                     <th>Reserve ID</th>
-                                    <th>Hotel Name</th>
+                                    <th>Restaurant Name</th>
                                     <th>Package Name</th>
                                     <th>Check-In Date</th>
                                     <th>Check-Out Date</th>
@@ -122,15 +123,15 @@ if (!isset($_SESSION['owner_id'])) {
             </section>
 
             <section id="hotel">
-                <h1>Hotel Management</h1>
+                <h1>Restaurant Management</h1>
 
                 <div class="table-main">
                     <div class="table-wrapper">
                         <table class="table">
                             <thead>
                                 <tr>
-                                    <th>Hotel ID</th>
-                                    <th>Hotel Name</th>
+                                    <th>Restaurant ID</th>
+                                    <th>Restaurant Name</th>
                                     <th colspan="2">Action</th>
                                 </tr>
                             </thead>
@@ -175,7 +176,7 @@ if (!isset($_SESSION['owner_id'])) {
                                 <tr>
                                     <th>Package ID</th>
                                     <th>Package Name</th>
-                                    <th>Hotel Name</th>
+                                    <th>Restaurant Name</th>
                                     <th colspan="2
                                     ">Action</th>
                                 </tr>

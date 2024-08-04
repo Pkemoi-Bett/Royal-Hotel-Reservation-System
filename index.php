@@ -8,7 +8,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservify</title>
+    <title>SweetHome</title>
     <link rel="stylesheet" href="css/index.css">
 </head>
 
@@ -31,8 +31,8 @@ session_start();
 
     <div class="HotelOwners">
 
-        <h2>Hotel Owners, Get Started Now!</h2>
-        <h3>Join Our Network of Hotels and Boost Your Bookings</h3>
+        <h2>Restaurant Owners, Get Started Now!</h2>
+        <h3>Join Our Network of Restaurants and Boost Your Bookings</h3>
         <div>
             <button onclick="location.href='./ownerRegister.php'" type="button"><span></span> Register</button>
         </div>

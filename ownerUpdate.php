@@ -58,7 +58,7 @@ if (isset($_POST['submit'])) {
 
 <head>
   <meta charset="UTF-8">
-  <title>Reservify: Sign Up</title>
+  <title>SweetHome</title>
   <!-- Include CSS files -->
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/register.css">

@@ -13,7 +13,7 @@
     <h1 class="site-logo"><a href="./index.php">SweetHome</a></h1>
     <ul >
         <li><a href="./about.php" >About Us</a></li>
-        <li><a href="./hotel.php">Hotel</a></li>
+        <li><a href="./hotel.php">Restaurant</a></li>
         <li><a href="./contact.php">Contact Us</a></li>
     </ul>
     <div class="btn">

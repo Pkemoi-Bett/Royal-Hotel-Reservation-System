@@ -1,97 +1,155 @@
- .main {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     flex-direction: column;
-     padding: 20px 0px 30px 0px;
-     height: auto;
-     font-family: Arial, sans-serif;
-     background-color: #f0f0f0;
- }
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Ubuntu:wght@500&display=swap');
 
- h1 {
-     text-align: center;
-     color: #333;
-     padding: 20px;
- }
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 0px 30px 0px;
+    height: auto;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
 
- .form-container {
-     display: flex;
-     flex-direction: column;
-     width: 60%;
-     background-color: aliceblue;
-     border-radius: 1.2rem;
- }
+h1 {
+    text-align: center;
+    color: #333;
+    padding: 20px;
+}
 
- .form {
-     padding: 10px;
- }
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    background-color: aliceblue;
+    border-radius: 1.2rem;
+    padding: 20px;
+}
 
- form {
-     display: flex;
-     height: auto;
-     width: 50%;
-     gap: 20px;
-     background-color: #fff;
-     border: 3px solid purple;
-     border-radius: 5px;
-     padding: 20px;
-     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
- }
+.form {
+    padding: 10px;
+}
 
- .form label {
-     font-weight: bold;
-     display: block;
-     padding: 10px;
- }
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #fff;
+    border: 3px solid purple;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
 
- input[type="date"],
- input[type="number"],
- input[type="text"],
- select,
- textarea {
-     width: 100%;
-     padding: 10px;
-     border: 1px solid #ccc;
-     border-radius: 4px;
-     font-size: 16px;
- }
+.form label {
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+}
 
- input[type="submit"] {
-     background-color: #007bff;
-     color: #fff;
-     border: none;
-     padding: 10px 20px;
-     border-radius: 5px;
-     cursor: pointer;
-     font-size: 18px;
-     width: 60%;
- }
+input[type="date"],
+input[type="number"],
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
 
- input[type="submit"]:hover {
-     background-color: #0056b3;
- }
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+}
 
- .summery {
-     display: flex;
-     flex-direction: column;
-     align-items: flex-start;
-     justify-content: center;
-     gap: 20px;
-     width: 50%;
-     padding: 10px;
- }
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
 
- .summery h2 {
-     font-size: 20px;
- }
+.summery {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    padding: 10px;
+}
 
- .summery form {
+.summery h2 {
+    font-size: 20px;
+}
+
+.summery form {
     display: flex;
     flex-direction: column;
     gap: 10px;
- }
+}
 
+/* Media Queries */
+@media (max-width: 768px) {
+    .form-container, form, .summery {
+        width: 80%;
+    }
 
+    form {
+        border-width: 2px;
+    }
 
+    input[type="submit"] {
+        width: 100%;
+        font-size: 16px;
+    }
+}
 
+@media (max-width: 480px) {
+    .main {
+        padding: 10px;
+    }
+
+    .form-container, form, .summery {
+        width: 100%;
+    }
+
+    form {
+        padding: 10px;
+        gap: 15px;
+    }
+
+    input[type="date"],
+    input[type="number"],
+    input[type="text"],
+    select,
+    textarea,
+    input[type="submit"] {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    input[type="submit"] {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    .form label {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .summery h2 {
+        font-size: 18px;
+    }
+}

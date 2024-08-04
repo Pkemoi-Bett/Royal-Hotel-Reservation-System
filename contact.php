@@ -44,7 +44,7 @@ mysqli_close($conn);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservify: Contact Us</title>
+    <title>SweetHome: Contact Us</title>
     <!-- Include CSS file -->
     <link rel="stylesheet" href="css/contact.css">
     <script src="./js/email.js"></script>
@@ -61,7 +61,7 @@ mysqli_close($conn);
 
                 <h1>Contact Us</h1>
 
-                <p class="para">Discover how "Reservify" can assist you.</p>
+                <p class="para">Discover how "SweetHome" can assist you.</p>
                 <br>
                 <p>We believe in open communication and are excited to connect with our visitors. Your feedback is important to us, and we appreciate your interest. We're here to help in any way we can. Simply fill out our user-friendly online form below, providing the necessary details.</p>
 

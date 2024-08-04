@@ -4,7 +4,7 @@ const searchButton = document.querySelector("button");
 // Add an input event listener to the search input
 searchInput.addEventListener("input", searchHotels);
 
-function searchHotels() {
+function searchrestaurant() {
     const searchValue = searchInput.value.toLowerCase();
 
     // Get all the hotel cards
